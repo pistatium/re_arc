@@ -4,5 +4,5 @@
 ## proto to go source
 
 ```sh
-$ cd protos/; protoc *.proto --go_out=plugins=grpc:.
+protoc protos/*.proto --go_out=plugins=grpc:. --go_opt=module=github.com/pistatium/re_ark -I./protos/
 ```
